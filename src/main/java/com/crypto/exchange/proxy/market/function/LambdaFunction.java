@@ -1,11 +1,9 @@
 package com.crypto.exchange.proxy.market.function;
 
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
-import com.crypto.exchange.proxy.SpringbootAwsLambdaApplication;
 import com.crypto.exchange.proxy.market.service.ExchangeProxyService;
 import com.crypto.exchange.proxy.market.service.IpCheckService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -32,9 +30,5 @@ public class LambdaFunction {
         return (event) -> ipCheckService.ipCheck();
     }
 
-
-    public static void main(String[] args) {
-        SpringApplication.run(SpringbootAwsLambdaApplication.class, args);
-    }
 
 }
