@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.net.URI;
 import java.util.Map;
 
 
-@FeignClient(value = "gateio", url = "${exchange.gateio.spot.url}")
+@FeignClient(value = "gateio", url = "${exchange.spot-base-url.gateio}")
 public interface GateIOClient {
 
 	@RequestMapping(method = RequestMethod.GET, value = "{path}")
-	Object getPairData(@PathVariable(value="path") String path, @RequestParam Map<String, String> query);
+	Object getPairData(URI baseUrl, @PathVariable(value="path") String path, @RequestParam Map<String, String> query);
 
 
 

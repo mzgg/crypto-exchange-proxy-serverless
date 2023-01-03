@@ -1,0 +1,21 @@
+logging:
+  level:
+    com:
+      crypto: debug
+
+
+feign:
+  client:
+    config:
+      gateio:
+        read-timeout: '1500'
+        connect-timeout: '1500'
+        logger-level: basic
+
+exchange:
+  spot-base-url:
+    binance: https://api.binance.com/api/v3/
+    mexc: https://api.mexc.com/api/v3/
+    gateio: https://api.gateio.ws/api/v4/
+    mexcv2: https://www.mexc.com/open/api/v2
+    huobi: https://api-aws.huobi.pro
