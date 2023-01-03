@@ -1,6 +1,13 @@
 # crypto-exchange-proxy-serverless
 AWS Multiple Crypto Exchange Platform provide price action as FaaS
 
+### Supported Spot Exchange Platforms
+- Binance
+- Gateio
+- Mexc
+- Huobi
+
+
 ### Test for Ip Check Function in Local
 ```curl -H "Content-Type: text/plan" localhost:8080/getIpCheck```
 
