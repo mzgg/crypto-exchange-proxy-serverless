@@ -28,3 +28,4 @@ dist/
 *.iml
 # JetBrains IDE
 .idea/
+.idea
