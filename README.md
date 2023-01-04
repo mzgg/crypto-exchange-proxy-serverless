@@ -53,7 +53,7 @@ Ex Response
 
 
   
- ####Dont' miss the descripe the `Environment variables`.
+ #### Dont' miss the descripe the `Environment variables`.
 ```
 FUNCTION_NAME=getResponseFromExchangeData
 or
