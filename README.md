@@ -53,9 +53,17 @@ Ex Response
 
 
   
- #### Dont' miss the descripe the `Environment variables`.
+ #### Dont' miss the descripe the `Environment variables` and `Handler`.
 ```
 FUNCTION_NAME=getResponseFromExchangeData
 or
 FUNCTION_NAME=getIpCheck
 ```
+
+Handler
+```
+com.crypto.exchange.proxy.ExchangeHandler
+
+```
+
+
